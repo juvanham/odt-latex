@@ -32,11 +32,13 @@ citations have two formats (author year)
  (Author Name year: remarks) this creates: ~\citep[remarks]{author-name:year}
  (Author Name o.J.: remarks) this creates: ~\citep[remakrs]{author-name:0000}
 
-In the text can be (Abb. 4) this generates (Abb.~\ref{figure:4})
+In the text can occur a snippet (Abb. 4) this generates (Abb.~\ref{figure:4})
+
+The remarks "Interview" appends :i to the citation key, and pers. Gespr. as comment appends :c to the citation key, this makes it possible to have interviews and conversations in separate bibliographies. (This is supported by biblatex)
 
 since colors were use as a help I did not implement different colors, but if a color is detects it can mark in orange {\color{orange} ... }
 
-A way to improve this would be a table of hexrgb color and their name and look for the closed 3d distance to a specified color. At the end I needed to disable the color suport, which made this color approximation no longer needed.
+A way to improve this would be a table of hex rgb color and their name and look for the closed 3d distance to a specified color. At the end I needed to disable the color suport, which made this color approximation no longer needed.
 
 The program is written in Ruby and it generates almost normal looking LaTeX code
 by:
